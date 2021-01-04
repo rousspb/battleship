@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Header from './components/header'
+import Player from './components/main/aside/player'
+import ShipAircraft from './components/main/ships/ShipAircraft'
+import ShipBattleship from './components/main/ships/ShipBattleship'
+import ShipCarrier from './components/main/ships/ShipCarrier'
+import ShipCruiser from './components/main/ships/ShipCruiser'
+import ShipSubmarine from './components/main/ships/ShipSubmarine'
+import Layout from './components/main/aside/layout'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <main>
+      <Player />
+      <Player />
+      <ShipAircraft />
+      <ShipBattleship />
+      <ShipCarrier />
+      <ShipCruiser />
+      <ShipSubmarine />
+      <Layout />
+      </main>
     </div>
   );
 }
